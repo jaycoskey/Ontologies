@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF xmlns="http://www.coskey.org/owl/ontologies/crime/#"
+         xmlns:bfo="http://www.ifomis.org/bfo/1.1"
+         xmlns:bio="http://purl.org/vocab/bio/01"
+         xmlns:dc="http://purl.org/dc/elements/1.1"
+         xmlns:foaf="http://xmlns.com/foaf/0.1"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:gfo="http://www.onto-med.de/ontologies/gfo.owl#"
+         xmlns:gr="http://purl.org/goodrelations/v1"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:owl-time="http://www.w3.org/2006/time#"
+         xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:qo="http://purl.org/qual/qual-o"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:sem="http://semanticweb.cs.vu.nl/2009/11/sem/"
+         xmlns:sioc="http://rdfs.org/sioc/spec"
+         xmlns:ssn="http://purl.oclc.org/NET/ssnx/ssn"
+         xmlns:trn="http://vocab.org/transit"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         >
+
+    <rdfs:comment>
+      TODO: 
+        xmlns:fhwa	
+        xmlns:fibo
+        xmlns:iao
+        xmlns:ic
+        xmlns:obo
+        xmlns:trip
+    </rdfs:comment>       
+
+    <rdfs:comment>
+      TODO: 
+        owl:AnnotationProperty
+        owl:ObjectProperty
+        owl:Restriction
+
+        owl:allValuesFrom
+        owl:disjointWith
+        owl:equivalentProperty
+        owl:hasValue
+        owl:intersectionOf
+        owl:inverseOf
+        owl:members
+        owl:onProperty
+        owl:someValuesFrom
+        owl:unionOf
+
+        rdf:Description
+
+        rdf:type
+
+        rdfs:domain
+        rdfs:label
+        rdfs:range
+        rdfs:subClassOf
+        rdfs:subPropertyOf
+    </rdfs:comment>       
+
+    <owl:Ontology rdf:about="">
+        <rdfs:comment>
+            Crime Ontology                           
+            Author: Jay Coskey
+        </rdfs:comment>
+    </owl:Ontology>
+
+     <owl:Class rdf:ID="Airplane">
+          <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+     </owl:Class>
+
+     <owl:DatatypeProperty rdf:ID="modeOfTransportation">
+          <rdfs:domain rdf:resource="#Money"/>
+          <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+     </owl:DatatypeProperty>
+</rdf:RDF>
+
