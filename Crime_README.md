@@ -31,7 +31,9 @@ Project Phases (can be overlapping)
   * Create categorized tables of Things, Predicates, and properties, with associated source ontologies
   * Example categories: Bio, Business, Evidence, Finance, Geo, Law, Terrorism, Travel
   * Establish relationships between Things and Predicates (sequence diagrams, etc.) (Use rdfs?)
-### **Phase 3:** Create ontology doc (OWL format?)
+### **Phase 3:** Create ontology doc
+  * Format: OWL?
+  * Alternatives: N-Triples, OWL, RDF, Turtle
 ### **Phase 4:** Populate ontology
   * Populate ontology with real-world or mock data. Real world can come from terrorist events (e.g., 9/11)
 ### **Phase 5:** Ontology queries
@@ -43,7 +45,7 @@ Project Phases (can be overlapping)
 
 ## Appendix: Glossary
 
-Term        | Definition
+Term        | Meaning
 ----------- | ----------
 AKEM        | Application Knowledge Engineering Methodology (uses RUP=Rational Unified Process)
 BN          | Bayesian Networks
@@ -57,11 +59,15 @@ MEBN/PR-OWL | Multi-Entity Bayesian Networks
 MFrag       | MEBN Fragment (influences among clusters of related random variables)
 MSBN        | Multiply-Sanctioned Bayesian Networks
 OOBN        | Object-Oriented Bayesian Networks
-OWL 2 / Full| If you are unconcerned about performance of automated reasoning
-OWL 2 / EL  | Optimized for inference of relationships (polynomial time)
-OWL 2 / QL  | Optimized for quantity of instance data, & for running atop a relational DB
-OWL 2 / RL  | Optimized for running on a traditional business rules engine
-OWL-DL      | A decidable subset of OWL based on Description Logics
+---
+OWL Full    | If you are unconcerned about performance of automated reasoning
+OWL DL      | A decidable subset of OWL (Full) based on Description Logics
+OWL Lite    | A subset of OWL (Full)
+---
+OWL EL      | Optimized for inference of relationships (polynomial time)
+OWL QL      | Optimized for quantity of instance data, & for running atop a relational DB
+OWL RL      | Optimized for running on a traditional business rules engine
+---
 P-SHOQ(D)   | A probabilistic extension of SHOQ(D)
 SHOQ(D)     | A descriptive logic comparable with OWL
 SSBN        | Situation-specific Bayesian network
