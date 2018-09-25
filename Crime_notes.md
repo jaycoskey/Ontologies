@@ -1,48 +1,72 @@
-| Comp type | Areas             | Component name      | Base ontology | Notes |
-| --------- | ----------------- | ------------------- | ------------- | ----- |
-| Thing     | Travel            | Airplane            | | |
-| Thing     | Event, Law        | Arrest              | | |
-| Thing     | Finance           | BankAccount         | | |
-| Thing     | Bio               | Birth               | | |
-| Thing     | Bomb              | BombConventional    | | |
-| Thing     | Bomb              | BombNuclear         | | |
-| Thing     | Activity,Finance  | BribeActivity       | | |
-| Thing     | Physical          | Building            | | |
-| Thing     | Law               | Case                | | |
-| Thing     |                   | CellPhone           | | | 
-| Thing     | Law               | CriminalCharge      | | |
-| Thing     | Chemical          |                     | | |
-| Thing     | Geo               | City                | | |
-| Thing     | Claim             |                     | | | 
-| Thing     | Business          | Company             | | |
-| Thing     | Contract          |                     | | |
-| Thing     | Business          | ContractParty       | | |
-| Thing     | Geo               | Country             | | |
-| Thing     | Basic             | DateTime            | | |
-| Thing     | Bio               | Death               | | |
-| Thing     | Finance           | FinancialDerivative | | |
-| Thing     | Bio               | Disease             | | |
-| Thing     |                   | Education           | | |
-| Thing     | Finance           | EFT                 | | |
-| Thing     | Finance           | FinancialFraudType  | | |
-| Thing     | Activity,Terrorism| HijackActivity      | | |
-| Thing     | Law               | Identification      | | |
-| Thing     | Law               | Jurisdiction        | | |
-| Thing     |                   | Language            | | |
-| Thing     | Geo               | Location            | | |
-| Thing     |                   | Message             | | |
-| Thing     | Business          | Organization        | | E.g., Political,Religion,Social |
-| Thing     | Travel            | Passport            | | |
-| Thing     |                   | Person              | | |
-| Thing     |                   | PhoneCall           | | |
-| Thing     |                   | Profession          | | |
-| Thing     |                   | Religion            | | |
-| Thing     | Finance           | Stock               | | |
-| Thing     | Activity,Travel   | TravelActivity      | | |
-| Thing     | Activity,Law      | TrialActivity       | | |
-| Thing     | Transportation    | Vehicle             | | |
-| Thing     |                   | Weapon              | | |
-| Thing     | Activity          | WitnessActivity     | | |
-| Predicate | isBioChildOf      |                     | | |
-| Predicate | isBioParentOf     |                     | | |
- 
+## Crime ontology notes (Classes, Properties, Resources)
+
+Area           | Type  | Component name      | Super | Base ontology | Notes
+-------------- | ----- | ------------------- | ----- | ------------- | -----
+Bio            | Class | Birth               | | |
+Bio            | Class | Death               | | |
+Bio            | Class | Disease             | | |
+Bio            | Class | Education           | | |
+Bio            | Class | Person              | | |
+Bio            | Class | Profession          | | |
+Bio            | Class | Religion            | | |
+Bio            | Pred  | isBioChildOf        | | |
+Bio            | Pred  | isBioParentOf       | | |
+---
+Bomb           | Class | BombConventional    | | |
+Bomb           | Class | BombNuclear         | | |
+---
+Business       | Class | Company             | | |
+Business       | Class | ContractParty       | | |
+Business       | Class | Organization        | | | E.g., Political,Religion,Social
+---
+Chemical       | Class | Chemical            | | |
+---
+Communication  | Class | CellPhone           | | | 
+Communication  | Class | Language            | | |
+Communication  | Class | Message             | | |
+Communication  | Class | PhoneCall           | | |
+Communication  | Class | WrittenMessage      | | |
+---
+Finance        | Class | BankAccount         | | |
+Finance        | Class | BribeActivity       | | |
+Finance        | Class | Currency            | | |
+Finance        | Class | EFT                 | | |
+Finance        | Class | FinancialDerivative | | |
+Finance        | Class | FinancialFraudType  | | |
+Finance        | Class | Money               | | |
+Finance        | Class | Stock               | | |
+---
+Geo            | Class | Address             | | |
+Geo            | Class | Building            | | |
+Geo            | Class | City                | | |
+Geo            | Class | Country             | | |
+Geo            | Class | Location            | | |
+---
+Law            | Class | Arrest              | | |
+Law            | Class | Case                | | |
+Law            | Class | Contract            | | |
+Law            | Class | CriminalCharge      | | |
+Law            | Class | Identification      | | |
+Law            | Class | Jurisdiction        | | |
+Law            | Class | LegalClaim          | | | 
+Law            | Class | TrialActivity       | | |
+Law            | Class | WitnessActivity     | | |
+---
+Time           | Class | DateTime            | | |
+---
+Travel         | Class | Airplane            | | |
+Travel         | Class | Boat                | | |
+Travel         | Class | Car                 | | |
+Travel         | Class | Passport            | | |
+Travel         | Class | TravelActivity      | | |
+Travel         | Prop  | transportationMode  | | |
+---
+Transportation | Class | Vehicle             | | |
+---
+Terrorism      | Class | HijackActivity      | | |
+---
+Weapon         | Class | Bomb                | | |
+Weapon         | Class | Firearm             | | |
+Weapon         | Class | Knife               | | |
+Weapon         | Class | Weapon              | | |
+
